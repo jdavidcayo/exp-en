@@ -1,10 +1,16 @@
 @api = http://localhost:3000/tasks  
 
-//DELETE  {{api}}/1 
+###
+//Get all tasks
+GET {{api}}
 
 
+//Get a task by id
+###
+GET {{api}}/7
 
-
+###
+//Create a task
 POST {{api}}
 Content-Type: application/json
 
@@ -12,3 +18,11 @@ Content-Type: application/json
     "title":"new task",
     "description": "new description"
 }
+
+###
+//Delete Task by id
+DELETE {{api}}/6
+
+//Get tasks total count
+###
+GET {{api}}/count
