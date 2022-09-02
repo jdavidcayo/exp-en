@@ -1,3 +1,14 @@
 @api = http://localhost:3000/tasks  
 
-GET {{api}} 
+//DELETE  {{api}}/1 
+
+
+
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "title":"new task",
+    "description": "new description"
+}
