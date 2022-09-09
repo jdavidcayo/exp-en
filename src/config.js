@@ -1,6 +1,6 @@
 export const config = {
-    host: 'localhost',
-    user: 'exp-en',
-    password: 'exp-en',
-    database: 'expendb'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE
 }
