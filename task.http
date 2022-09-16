@@ -1,4 +1,4 @@
-@api = http://localhost:3000/tasks  
+@api = http://localhost:3000/api/personal  
 
 ###
 //Get all tasks
@@ -7,7 +7,7 @@ GET {{api}}
 
 //Get a task by id
 ###
-GET {{api}}/7
+GET {{api}}/10
 
 ###
 //Create a task
@@ -15,13 +15,25 @@ POST {{api}}
 Content-Type: application/json
 
 {
-    "title":"new task",
-    "description": "new description"
+    "name": "Agustina",
+    "lastName": "Dias",
+    "dni": "55433444"
+}
+
+### 
+// update a task
+PUT {{api}}/5
+Content-Type: application/json
+
+{
+    "name": "Marcela",
+    "lastName": "Morello",
+    "dni": "66553"
 }
 
 ###
 //Delete Task by id
-DELETE {{api}}/6
+DELETE {{api}}/4
 
 //Get tasks total count
 ###
